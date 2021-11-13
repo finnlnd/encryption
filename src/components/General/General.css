@@ -1,0 +1,37 @@
+.general-container {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.first-row {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.third-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.third-row-first {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}

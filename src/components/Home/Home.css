@@ -1,0 +1,16 @@
+.home-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.person-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-person {
+  width: 45%;
+}

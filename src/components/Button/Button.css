@@ -1,0 +1,45 @@
+.button-container {
+  width: 155px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button-blue {
+  background-color: #4200ff;
+}
+
+.button-red {
+  background-color: #ff0000;
+}
+
+.button-label {
+  display: block;
+  font-family: "Lato";
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+.button-blue:hover {
+  background-color: #fff;
+  border: 1px solid #4200ff;
+  transition: 0.2s;
+  color: #4200ff;
+}
+
+.button-red:hover {
+  background-color: #fff;
+  border: 1px solid #ff0000;
+  transition: 0.2s;
+  color: #ff0000;
+}
+
+.button-container:hover .button-label {
+  color: #4200ff;
+}

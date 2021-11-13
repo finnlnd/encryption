@@ -1,0 +1,44 @@
+.keyView-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.keyView-label {
+  display: block;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  margin-bottom: 20px;
+}
+
+.key-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.key-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.key-label {
+  font-family: "Lato";
+  font-size: 20px;
+  width: 10%;
+  max-width: 30px;
+}
+
+.key-textarea-wrapper {
+  margin-left: 20px;
+  width: 70%;
+}
+
+.key-textarea {
+  border-radius: 10px;
+  border: 1px solid #929292;
+  width: 100%;
+  max-width: 1000px;
+  height: 60px;
+  resize: none;
+  font-family: "Lato";
+}

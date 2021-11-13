@@ -1,0 +1,24 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-family: "Playfair Display";
+  margin-bottom: 5px;
+}
+
+.input {
+  font-family: "Lato";
+  padding-left: 5px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #929292;
+}
+
+.input-textarea {
+  resize: none;
+}

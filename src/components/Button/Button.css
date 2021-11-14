@@ -33,6 +33,10 @@
   color: #4200ff;
 }
 
+.button-blue:hover .button-label {
+ color: #4200ff; 
+}
+
 .button-red:hover {
   background-color: #fff;
   border: 1px solid #ff0000;
@@ -40,6 +44,6 @@
   color: #ff0000;
 }
 
-.button-container:hover .button-label {
-  color: #4200ff;
+.button-red:hover .button-label {
+  color: #ff0000;
 }

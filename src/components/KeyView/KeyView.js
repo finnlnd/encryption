@@ -18,9 +18,8 @@ export default function KeyView(props) {
               className="key-textarea"
               style={style}
               readOnly={props.readOnly}
-            >
-              {props.nKey}
-            </textarea>
+              value={props.nkey}
+            ></textarea>
           </div>
         </div>
         <div className="key-row">
@@ -32,9 +31,8 @@ export default function KeyView(props) {
               className="key-textarea"
               style={style}
               readOnly={props.readOnly}
-            >
-              {props.eKey}
-            </textarea>
+              value={props.eKey}
+            ></textarea>
           </div>
         </div>
       </div>

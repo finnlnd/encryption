@@ -7,6 +7,7 @@ import Signatur from "../Signatur/Signatur";
 export default function Person(props) {
   return (
     <div className="person-container">
+      <div id={"overlay-container-person-" + props.name} className="none"></div>
       <div className="first-row">
         <h1 className="person-name">{props.name}</h1>
       </div>
@@ -14,9 +15,9 @@ export default function Person(props) {
         <Input
           label="Privater Schlüssel"
           width="100%"
-          value={props.dAlice}
+          value={props.dKey}
           type="textarea"
-          height="65px"
+          height="80px"
           readOnly={true}
         />
         <Input
@@ -48,7 +49,7 @@ export default function Person(props) {
       </div>
       <div className="sixth-row">
         <Button label="Versenden" />
-        <Button label="Löschen" backgroundColor="#FF0000" />
+        <Button label="Löschen" color="red" />
       </div>
     </div>
   );

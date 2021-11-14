@@ -27,9 +27,8 @@ export default function Input(props) {
             style={styleTextarea}
             onChange={props.setter ? (e) => props.setter(e.target.value) : null}
             readOnly={props.readOnly}
-          >
-            {props.value}
-          </textarea>
+            value={props.value}
+          ></textarea>
         </div>
       );
     } else {

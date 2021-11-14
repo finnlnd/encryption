@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import General from "../General/General";
 import Person from "../Person/Person";
+import generateKeys from "../../util/util";
 
 export default function Home() {
   // Anzahl der Schritte Miller-Rabin-Test und Bitgröße für Primzahlen
@@ -45,10 +46,25 @@ export default function Home() {
         eAlice={eAlice}
         nBob={nBob}
         eBob={eBob}
+        generateKeys={() => {
+          generateKeys(
+            counterMillerRabin,
+            bits,
+            setNAlice,
+            setEAlice,
+            setDAlice,
+            setNBob,
+            setEBob,
+            setDBob
+          );
+        }}
       />
       <div className="person-wrapper">
         <div className="first-person">
-          <Person name="Alice" dAlice={dAlice} />
+          <Person name="Alice" dKey={dAlice} />
+        </div>
+        <div className="second-person">
+          <Person name="Bob" dKey={dBob} />
         </div>
       </div>
     </div>

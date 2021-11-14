@@ -9,8 +9,13 @@
 .person-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .first-person {
-  width: 45%;
+  width: 47.5%;
+}
+
+.second-person {
+  width: 47.5%;
 }

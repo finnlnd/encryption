@@ -6,18 +6,21 @@ import Button from "../Button/Button";
 export default function General(props) {
   return (
     <div className="general-container">
+      <div id="overlay-container-general" className="none"></div>
       <div className="first-row">
         <Input
           label="Anzahl der Schritte beim Miller-Rabin-Test"
           type="number"
           setter={props.setCounterMillerRabin}
           width="50%"
+          value={props.counterMillerRabin}
         />
         <Input
           label="Länge der Primzahlen"
           type="number"
           setter={props.setBits}
           width="50%"
+          value={props.bits}
         />
       </div>
       <div className="second-row">
@@ -49,7 +52,7 @@ export default function General(props) {
           />
         </div>
         <div className="third-row-second">
-          <Button label="Start" />
+          <Button label="Start" onclick={props.generateKeys} />
         </div>
       </div>
     </div>

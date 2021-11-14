@@ -25,3 +25,18 @@ input:focus {
 *:focus {
   outline: none;
 }
+
+/** HANDLE OVERLAY */
+.overlay {
+  margin: -20px 0 0 -20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #484848;
+  opacity: 0.5;
+}
+
+.none {
+  display: none;
+}
